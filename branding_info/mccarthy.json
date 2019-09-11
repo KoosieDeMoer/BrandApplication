@@ -1,0 +1,10 @@
+{
+   "logo_image_name": "mccarthy.png",
+   "logo_background_colour": "#fff",
+   "logo_height": 100,
+   "logo_background_size_width": 374,
+   "logo_background_size_height": 100,
+   "body_background_colour": "#fff",
+   "table_heading_background_colour": "#181049",
+   "submit_button_background_colour": "#BEBDC0"
+}

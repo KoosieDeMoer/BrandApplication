@@ -1,0 +1,109 @@
+<html>
+<head>
+
+<script src="angular/angular.js"></script>
+<script src="js/main.controller.js"></script>
+<title>Branding Editor</title>
+<link rel="stylesheet" href="styles/style.css" />
+<head>
+<body ng-app="MainModule" ng-controller="MainController">
+	<div class="error-box" ng-if="errorMessage">{{ errorMessage }}</div>
+	<div>
+		<form ng-submit="loadBrand()">
+			<table style="width: 480">
+				<tr>
+					<th colspan="3">Load Brand Info</th>
+				</tr>
+					<tr>
+					<td><select
+						ng-options="item as item for item in brands track by item"
+						ng-model="newDocForm.brandToLoad"></select></td>
+					<td><input type="button" ng-click="loadBrand()" value="Load" class="blue-button" /></td>
+					<td><input type="button" ng-click="viewBrand()" value="View" class="blue-button" /></td>
+				</tr>
+			</table>
+		</form>
+		<form ng-submit="createBrandingInfo()">
+			<table style="width: 480">
+
+				<tr>
+					<th colspan="2">Create Branding Info</th>
+				</tr>
+				<tr>
+					<td>Brand Identifier</td>
+					<td><input type="text" ng-model="newDocForm.brand" required /></td>
+				</tr>
+				<tr>
+					<td>Logo image</td>
+					<td><input type="text" ng-model="brand_info.logo_image_name"
+						required /></td>
+				</tr>
+				<tr>
+					<td>Logo background colour</td>
+					<td><input type="text"
+						ng-model="brand_info.logo_background_colour" required /></td>
+				</tr>
+				<tr>
+					<td>Logo height</td>
+					<td><input type="number" ng-model="brand_info.logo_height"
+						required /></td>
+				</tr>
+				<tr>
+					<td>Logo background size width</td>
+					<td><input type="number"
+						ng-model="brand_info.logo_background_size_width" /></td>
+				</tr>
+				<tr>
+					<td>Logo background size height</td>
+					<td><input type="number"
+						ng-model="brand_info.logo_background_size_height" /></td>
+				</tr>
+				<tr>
+					<td>Body background colour</td>
+					<td><input type="text"
+						ng-model="brand_info.body_background_colour" required /></td>
+				</tr>
+				<tr>
+					<td>Table Heading background colour</td>
+					<td><input type="text"
+						ng-model="brand_info.table_heading_background_colour" required /></td>
+				</tr>
+				<tr>
+					<td>Submit Button background colour</td>
+					<td><input type="text"
+						ng-model="brand_info.submit_button_background_colour" required /></td>
+				</tr>
+				<tr>
+					<td>{{newDocForm.created}}</td>
+					<td><input type="submit" value="Submit" class="blue-button" /></td>
+				</tr>
+			</table>
+		</form>
+		<form ng-submit="uploadFile()">
+			<table style="width: 480">
+				<tr>
+					<th colspan="2">Upload Image File</th>
+				</tr>
+					<tr>
+					<td><input type="file" file-model="myFile"/></td>
+					<td><input type="submit" value="Upload" class="blue-button" /></td>
+				</tr>
+			</table>
+		</form>
+		<form ng-submit="displayFile()">
+			<table style="width: 480">
+				<tr>
+					<th colspan="2">Display Image File</th>
+				</tr>
+					<tr>
+					<td><select
+						ng-options="item as item for item in images track by item"
+						ng-model="newDocForm.fileName"></select></td>
+					<td><input type="submit" value="Display" class="blue-button" /></td>
+				</tr>
+			</table>
+		</form>
+		<img id="image" ng-if="newDocForm.fileName">
+	</div>
+</body>
+</html>

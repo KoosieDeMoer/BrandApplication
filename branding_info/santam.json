@@ -1,0 +1,10 @@
+{
+   "logo_image_name": "santam.png",
+   "logo_background_colour": "#fff",
+   "logo_height": 68,
+   "logo_background_size_width": 151,
+   "logo_background_size_height": 68,
+   "body_background_colour": "$fff",
+   "table_heading_background_colour": "#003A79",
+   "submit_button_background_colour": "#FEC601"
+}

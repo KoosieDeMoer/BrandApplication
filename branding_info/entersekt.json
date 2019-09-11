@@ -1,0 +1,10 @@
+{
+  "logo_image_name": "entersekt.png",
+  "logo_background_colour": "#002244",
+  "logo_height": 50,
+  "logo_background_size_width": 177,
+  "logo_background_size_height": 50,
+  "body_background_colour": "#002244",
+  "table_heading_background_colour": "#DD4814",
+  "submit_button_background_colour": "#002244"
+}

@@ -1,0 +1,10 @@
+{
+   "logo_image_name": "sanlam.png",
+   "logo_background_colour": "#fff",
+   "logo_height": 45,
+   "logo_background_size_width": 152,
+   "logo_background_size_height": 45,
+   "body_background_colour": "#fff",
+   "table_heading_background_colour": "#0075C8",
+   "submit_button_background_colour": "#FFC20E"
+}

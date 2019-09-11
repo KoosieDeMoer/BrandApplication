@@ -1,0 +1,10 @@
+{
+  "logo_image_name": "nedbank.png",
+  "logo_background_colour": "#006341",
+  "logo_height": 50,
+  "logo_background_size_width": 0,
+  "logo_background_size_height": 0,
+  "body_background_colour": "#006341",
+  "table_heading_background_colour": "#000",
+  "submit_button_background_colour": "#006341"
+}

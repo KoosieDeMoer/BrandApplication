@@ -1,0 +1,10 @@
+{
+  "logo_image_name": "takealot.png",
+  "logo_background_colour": "#fff",
+  "logo_height": 60,
+  "logo_background_size_width": 280,
+  "logo_background_size_height": 60,
+  "body_background_colour": "#fff",
+  "table_heading_background_colour": "#0B79BF",
+  "submit_button_background_colour": "#3B93CB"
+}

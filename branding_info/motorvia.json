@@ -1,0 +1,10 @@
+{
+   "logo_image_name": "motorvia.png",
+   "logo_background_colour": "#fff",
+   "logo_height": 80,
+   "logo_background_size_width": 165,
+   "logo_background_size_height": 80,
+   "body_background_colour": "#fff",
+   "table_heading_background_colour": "#247F1F",
+   "submit_button_background_colour": "#C9B800"
+}
